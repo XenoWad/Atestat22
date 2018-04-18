@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Arhitectura</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+  <script type="text/javascript">
+  	vec=new Array("AteneulRoman.jpg","AteneulRoman2.jpg","PalatulCulturiiIasi.jpg","PalatulCulturiiIasi.jpg","PalatulCulturiiIasi2.jpg","Sighisoara1.jpg","Traditional1.jpg","Traditional2.jpg","Traditional3.jpg")
+      l=vec.length;
+  	i=0;
+
+  function rot() {
+  		if (document.images){
+  		i++;
+  		 if (i==l){
+  			i=0;
+  			}
+  		document.foto.src=vec[i]
+  		setTimeout("rot()",3*1000);
+  		}
+  	}
+  </script>
+  </head>
+  <body onload="rot()">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand" href="#">Arhitectura</div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Home.html">Acasa</a></li>
+        <li><a href="Moderna.html">Contemporana/Moderna</a></li>
+        <li><a href="#">Traditionala</a></li>
+        <li><a href="#">Arhitecti</a></li>
+        <li class="active"><a href="#">Galerie</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+  <img class = "img-responsive" src="Sighisoara1.jpg" style= "width:100%" alt="Imagine" name="x">
+
+<footer class="container-fluid text-center">
+  <p>Delia Ratiu</p>
+</footer>
+
+</body>
+</html>
